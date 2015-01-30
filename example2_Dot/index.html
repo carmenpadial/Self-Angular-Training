@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Controllers</title>
+    <script src="../libs/angular.js"></script>
+
+    <script>
+
+        angular.module("app", [])
+                .controller("DotController1", ["$scope", function($scope) {
+//                        $scope.data = {message:"hola"};
+
+        }])
+                .controller("DotController2", ["$scope", function($scope) {
+//                        $scope.data = {message:"hello"};
+                }
+        ]);
+
+
+    </script>
+
+    <input type="text" ng-model="data.message"/>
+    <h1>{{data.message}}</h1>
+
+    <div ng-controller="DotController1">
+        <input type="text" ng-model="data.message"/>
+        <h1>{{data.message}}</h1>
+    </div>
+
+    <div ng-controller="DotController2">
+        <input type="text" ng-model="data.message"/>
+        <h1>{{data.message}}</h1>
+    </div>
+
+</head>
+
+<body>
+
+
+
+</body>
+</html>
