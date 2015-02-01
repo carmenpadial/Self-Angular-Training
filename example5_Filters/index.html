@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Filter to reverse a message</title>
+    <script src="../libs/angular.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+
+<div ng-controller = "FirstCtrl">
+    <input type="text" ng-model="data.message"/>
+    <h1>{{data.message}}</h1>
+</div>
+
+<div ng-controller = "SecondCtrl">
+    <input type="text" ng-model="data.message"/>
+    <h1>{{data.message | reverse}} {{data.message}}</h1>
+</div>
+
+
+</body>
+</html>
