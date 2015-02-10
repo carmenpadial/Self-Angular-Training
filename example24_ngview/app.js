@@ -1,10 +1,16 @@
 angular.module("ngApp", ['ngRoute'])
     .config(function($routeProvider) {
-       $routeProvider.when('/',
+       $routeProvider
+           .when('/',
+               {
+                   templateUrl:'partial.html',
+                   controller:'AppCtrl'
+               })
+           .otherwise(
            {
-               templateUrl:'partial.html',
-               controller:'AppCtrl'
+               template:"Doesn't match!!"
            })
+
     })
     .controller('AppCtrl', function($scope) {
         $scope.data = "Hello world"
