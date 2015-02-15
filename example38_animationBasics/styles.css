@@ -1,0 +1,23 @@
+.toggleApp {
+    -webkit-transition: linear 1s;
+    -moz-transition: linear 1s;
+    -ms-transition: linear 1s;
+    -o-transition: linear 1s;
+    transition: linear 1s;
+}
+
+.toggleApp.ng-enter{
+    opacity: 0;
+}
+
+.toggleApp.ng-enter-active {
+    opacity: 1;
+}
+
+.toggleApp.ng-leave {
+    opacity: 1;
+}
+
+.toggleApp.ng-leave-active {
+    opacity: 0;
+}
