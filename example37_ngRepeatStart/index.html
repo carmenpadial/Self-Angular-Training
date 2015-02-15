@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="ngApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Directives communication</title>
+    <link rel="stylesheet" href="../libs/foundation.min.css">
+    <script src="../libs/angular.js"></script>
+    <script src="../libs/angular-route.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-controller="testCtrl">
+    <header ng-repeat-start="item in items">
+        Header {{item}}
+    </header>
+    <article>
+        Body {{item}}
+    </article>
+    <footer ng-repeat-end>
+        Footer {{item}}
+    </footer>
+</body>
+</html>
