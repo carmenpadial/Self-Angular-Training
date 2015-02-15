@@ -28,9 +28,10 @@ var app = angular.module('ngApp', []);
     app.directive("city", function() {
         return {
             restrict:'E',
-            require: '^state',
-            link:function(scope, element, attrs, stateCtrl) {
-                stateCtrl.testState("Manhattan");
+            require: ['^state', '^country'],
+            link:function(scope, element, attrs, ctrls) {
+                ctrls[0].testState("Manhattan");
+                ctrls[1].testCountry("Chicago");
             }
 
         }
