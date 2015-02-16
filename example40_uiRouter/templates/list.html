@@ -1,0 +1,9 @@
+<p>Lista de items</p>
+
+<table>
+    <tr ng-repeat="item in items">
+        <td><a ng-href="#/list/{{item.name}}">{{item.name}}</a></td>
+    </tr>
+</table>
+
+<ui-view></ui-view>
