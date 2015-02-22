@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="ngApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Angular ui.router</title>
+    <link rel="stylesheet" href="../libs/foundation.min.css">
+    <script src="../libs/angular.js"></script>
+    <script src="../libs/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="row" ui-view="header"></div>
+
+    <div class="row">
+        <div class="col-xs-3" ui-view="sideBar"></div>
+        <div class="col-xs-9" ui-view="content"></div>
+    </div>
+
+    <div class="row" ui-view="footer"></div>
+
+</div>
+
+
+</body>
+</html>
